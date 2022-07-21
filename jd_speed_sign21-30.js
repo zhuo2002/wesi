@@ -23,7 +23,7 @@ cron "21 3,8 * * *" script-path=jd_speed_sign.js,tag=京东极速版
 京东极速版 = type=cron,script-path=jd_speed_sign.js, cronexpr="21 3,8 * * *", timeout=33600, enable=true
 */
 
-const $ = new Env('京东极速版');
+const $ = new Env('京东极速版21-30');
 
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
@@ -55,7 +55,7 @@ let llAPIError = false
   }
   const date = new Date()
   $.last_day = new Date(date.getFullYear(), date.getMonth()+1, 0).getDate() == date.getDate()
-  for (let i = 10; i < 20; i++) {
+  for (let i = 20; i < 30; i++) {
     if (cookiesArr[i]) {
       cookie = cookiesArr[i];
       $.UserName = decodeURIComponent(cookie.match(/pt_pin=([^; ]+)(?=;?)/) && cookie.match(/pt_pin=([^; ]+)(?=;?)/)[1])
