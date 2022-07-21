@@ -33,10 +33,10 @@ cron:
  https://raw.githubusercontent.com/smiek2121/scripts/master/gua_opencard196.js, tag=7.22~8.6 超燃好物 七夕献礼, enabled=true
 
 */
-let guaopencard_addSku = 'false' // 加购
+let guaopencard_addSku = 'true' // 加购
 let guaopencard = 'true' // 执行
-let guaopenwait = 0 // 等待（秒）
-let guaopencard_draw = 0 // 抽奖次数
+let guaopenwait = 5 // 等待（秒）
+let guaopencard_draw = 3 // 抽奖次数
 
 const $ = new Env('7.22~8.6 超燃好物 七夕献礼')
 
