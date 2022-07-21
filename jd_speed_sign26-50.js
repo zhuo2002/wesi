@@ -9,7 +9,7 @@
 脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
 ============Quantumultx===============
 [task_local]
-#京东极速版
+#京东极速版11-20
 21 3,8 * * * jd_speed_sign.js, tag=京东极速版, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png, enabled=true
 
 ================Loon==============
@@ -55,7 +55,7 @@ let llAPIError = false
   }
   const date = new Date()
   $.last_day = new Date(date.getFullYear(), date.getMonth()+1, 0).getDate() == date.getDate()
-  for (let i = 25; i < 51; i++) {
+  for (let i = 10; i < 20; i++) {
     if (cookiesArr[i]) {
       cookie = cookiesArr[i];
       $.UserName = decodeURIComponent(cookie.match(/pt_pin=([^; ]+)(?=;?)/) && cookie.match(/pt_pin=([^; ]+)(?=;?)/)[1])
